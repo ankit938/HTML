@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    First name:<br>
+    <input type="text" id="firstname"value="67">
+    <br>
+    last name:<br>
+    <input type="text"id="lastname" value="500">
+    <br><br>
+
+    <input type="submit"value="Addition"id="addition" onclick="addition(4,3)"><br>
+    <input type="submit" value="Subtraction"id="subtraction" onclick="subtraction(4,3)"><br>
+    <input type="submit" value="Multiplication"id="multiplication" onclick="multiplication(4,3)"><br>
+    <input type="submit" value="Division"id="division" onclick="division(4,3)"><br>
+
+
+    <p id="demo">result</p>
+<script>
+    function addition(p1,p2){
+        var num1=parseInt(document.getElementById("firstname").value);
+        var num2=parseInt(document.getElementById("lastname").value);
+        const sum=num1+num2;
+        document.getElementById("demo").innerHTML=sum;
+    }
+        function subtraction(p1,p2){
+        var num1=parseInt(document.getElementById("firstname").value);
+        var num2=parseInt(document.getElementById("lastname").value);
+        const subtraction=num1-num2;
+        document.getElementById("demo").innerHTML=subtraction;
+        }
+         function multiplication(p1,p2){
+        var num1=parseInt(document.getElementById("firstname").value);
+        var num2=parseInt(document.getElementById("lastname").value);
+        const multiplication=num1*num2;
+        document.getElementById("demo").innerHTML=multiplication
+          }
+        function division(p1,p2){
+        var num1=parseInt(document.getElementById("firstname").value);
+        var num2=parseInt(document.getElementById("lastname").value);
+        const division=num1/num2;
+        document.getElementById("demo").innerHTML=division;
+    }
+
+</script>
+
+</body>
+</html>
